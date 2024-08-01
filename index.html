@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Dip Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stocks Dip Finder</h1><br>
+        </header>
+        <div class="content">
+            <aside>
+                <h2><img src="images/warning.webp" width="25px">  Can add <b>MAX</b> of 5 tickers per minute</h2>
+                <form id="addTickerForm">
+                    <input type="text" id="tickerInput" placeholder="Enter ticker symbol" required>
+                    <button type="submit">Add Ticker</button>
+                </form>
+                <ul id="tickerList">
+                </ul>
+            </aside>
+            <main>
+                <canvas id="stockChart"></canvas>
+            </main>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

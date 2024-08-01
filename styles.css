@@ -1,0 +1,123 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+nav {
+    display: flex;
+}
+
+#tickerList li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+#tickerList li:last-child {
+    border-bottom: none;
+}
+
+#tickerList img {
+    margin-right: 10px;
+}
+
+#tickerList strong {
+    margin-right: 5px;
+}
+
+#tickerList span {
+    margin-left: auto;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    background-color: #ffffff;
+    width: 250px;
+    border-right: 2px solid #ecf0f1;
+    padding: 20px;
+    height: calc(100vh - 60px);
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stockChart {
+    width: 90%;
+    height: 70%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ecf0f1;
+    font-size: 16px;
+}
+
+#addTickerForm {
+    margin-bottom: 20px;
+}
+
+#tickerInput {
+    margin-right: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+#addTickerForm button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#addTickerForm button:hover {
+    background-color: #0056b3;
+}
